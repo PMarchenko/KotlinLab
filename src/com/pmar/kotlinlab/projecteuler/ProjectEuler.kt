@@ -8,9 +8,11 @@ val problems = listOf(
     Problem5(),
     Problem6(),
     Problem7(),
-    Problem8()
+    Problem8(),
+    Problem9(),
+    Problem10()
 )
 
-fun main(args: Array<String>) {
+fun main() {
     problems.last().resolve()
 }

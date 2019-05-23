@@ -18,6 +18,6 @@ class Problem3 : Problem<Long>() {
         factorize(input).descendingIterator().forEach {
             if (isPrime(it)) return@solve it
         }
-        throw ProjectEulerException("Cannot solve the problem")
+        throw ProjectEulerException("Cannot solve ${toString()}")
     }
 }

@@ -23,6 +23,7 @@ fun factorize(number: Long): TreeSet<Long> {
 }
 
 fun isPrime(number: Long): Boolean {
+    if(number == 1L) return false
     for (factor in 2L..Math.sqrt(number.toDouble()).toLong()) {
         if (number % factor == 0L) return false
     }
