@@ -14,8 +14,7 @@ class Problem3 : Problem<Long>() {
     """.trimIndent()
 
     override fun solve(): Long {
-        val input = 600851475143L
-        factorize(input).descendingIterator().forEach {
+        600851475143L.factorize().descendingIterator().forEach {
             if (isPrime(it)) return@solve it
         }
         throw ProjectEulerException("Cannot solve ${toString()}")
