@@ -12,7 +12,10 @@ val problems = listOf(
     Problem9(),
     Problem10(),
     Problem11(),
-    Problem12()
+    Problem12(),
+    Problem13(),
+    Problem14(),
+    Problem15()
 )
 
 fun main() {

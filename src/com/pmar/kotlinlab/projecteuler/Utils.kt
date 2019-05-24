@@ -64,3 +64,15 @@ fun Long.divisors(): Collection<Long> {
     divisors.add(this)
     return divisors
 }
+
+
+fun collatzSequenceLength(number: Int): Int {
+    var startNumber = number.toLong()
+    var length = 0
+
+    while (startNumber > 1) {
+        startNumber = if (startNumber % 2 == 0L) startNumber / 2 else 3 * startNumber + 1
+        length++
+    }
+    return length
+}
